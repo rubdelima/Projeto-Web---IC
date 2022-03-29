@@ -7,10 +7,16 @@
     text-decoration: none;
 }
 
+img {
+    display: block;
+
+}
+
 body {
     font-size: 100%;
     background: rgb(7,0,36);
     background: linear-gradient(90deg, rgba(7,0,36,1) 15%, rgba(121,9,70,1) 85%);
+    display: grid;
 }
 
 .cabecalho {
@@ -39,6 +45,12 @@ body {
     max-width: 60px;
 }
 
+.container {
+    padding: 0 16px;
+
+}
+
+
 .conteudo {
     border-top: 0.4px solid #FFF2E7;
     padding: 24px;
@@ -49,11 +61,17 @@ body {
 }
 
 .tituloprinc {
+ 
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
     border-radius: 50px;
+    margin-top: 5rem;
+    background: #3e0345;
+    justify-content: center;
+    box-sizing: border-box;
+
 }
 
 .titulotxt {
@@ -72,6 +90,7 @@ body {
     font-weight: 400;
     font-size: 84;
     color: aliceblue;
+    text-align: center;
 }
 
 .titulo {
@@ -86,21 +105,90 @@ body {
 }
 
 .top1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family:   'Open Sans', sans-serif;
     color: #daeefe;
-    
+    font-weight: 100;
+    font-size: 54;
 }
 
 .nome {
     font-family: 'Righteous', cursive;
     font-weight: 300;
-    font-size: 74;
+    font-size: 94;
     color: #C8A2C8;
 }
 
 .hab {
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
-    font-size: 64;
+    font-size: 74;
     color: #C8A2C8;
+}
+
+.instrumento{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.barra {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width:400px;
+    min-width: 400px;
+}
+.barratitulo {
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+
+@media (max-width: 600px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: space-around;
+        padding: 24px;
+        background-color: #C8A2C8;
+    }
+    
+    .cabecalhoimg {
+        height: 120px;
+        max-width: 300px;
+    }
+    
+    .redessoc {
+        max-width: 80px;
+    }
+    
+    .instagram {
+        max-height: 40px;
+    }
+    
+    .github {
+        max-width: 40px;
+    }
+
+    .inst_foto {
+        max-width: 300px;
+    }
+    .barra {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width:300px;
+        min-width: 300px;
+    }
+
+
+
 }
